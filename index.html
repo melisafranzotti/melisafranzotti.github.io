@@ -119,6 +119,16 @@ section{padding:96px 0}
 .no-hago{margin-top:24px;padding:20px 24px;border-radius:16px;background:var(--crema);font-size:16px;color:var(--gris)}
 .no-hago strong{color:var(--petroleo-osc)}
 
+/* preguntas */
+.preguntas .lista{max-width:820px;margin-top:32px}
+.preguntas details{border-bottom:1px solid var(--linea);padding:4px 0}
+.preguntas summary{cursor:pointer;list-style:none;padding:20px 40px 20px 0;font-size:20px;font-weight:700;position:relative}
+.preguntas summary::-webkit-details-marker{display:none}
+.preguntas summary::after{content:"+";position:absolute;right:4px;top:14px;font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:30px;color:var(--agua)}
+.preguntas details[open] summary::after{content:"–"}
+.preguntas summary:focus-visible{outline:3px solid var(--agua);outline-offset:3px}
+.preguntas details p{color:var(--gris);font-size:17px;max-width:70ch}
+
 /* contacto */
 .contacto{background:var(--petroleo);color:var(--crema);text-align:center}
 .contacto h2{color:var(--crema);max-width:20ch;margin:0 auto 18px}
@@ -324,6 +334,39 @@ footer a{color:#A9C7CB}
       <p>Hace más de 10 años que trabajo en marketing digital. Empecé en un comercio de Paraná, cuando muchos todavía no se animaban a vender por internet, y desde entonces no paré de aprender: soy autodidacta por naturaleza.</p>
       <p>Hoy soy consultora independiente y trabajo desde la costa santafesina, para pymes y profesionales de todo el país, en forma remota.</p>
       <div class="no-hago"><strong>Lo que no hago:</strong> no respondo los mensajes de tus clientes ni gestiono tus redes como community manager. Armo el sistema para que tu equipo atienda mejor.</div>
+    </div>
+  </div>
+</section>
+
+<section class="preguntas" id="preguntas" aria-labelledby="t-preguntas">
+  <div class="wrap">
+    <p class="eyebrow">Preguntas frecuentes</p>
+    <h2 id="t-preguntas">Lo que suelen preguntarme <span class="serif">antes de empezar.</span></h2>
+    <div class="lista">
+      <details>
+        <summary>¿Qué es la atención omnicanal y por qué le sirve a una pyme?</summary>
+        <p>Es que tu cliente pueda escribirte por Instagram, WhatsApp, Facebook o tu web y que del otro lado lo atiendan como una sola empresa: con el mismo tono, la misma información y sabiendo lo que ya habló. Para una pyme significa menos consultas perdidas y menos clientes que tienen que repetir todo.</p>
+      </details>
+      <details>
+        <summary>¿Puedo tener un asistente con IA en el WhatsApp de mi negocio?</summary>
+        <p>Sí. Un asistente con IA entrenado con la información de tu negocio puede responder las preguntas repetitivas a cualquier hora (horarios, precios, primeros datos) y pasarle la conversación a una persona de tu equipo cuando hace falta, con todo el contexto.</p>
+      </details>
+      <details>
+        <summary>¿Me alcanza con WhatsApp Business o necesito la API oficial?</summary>
+        <p>Depende del volumen. Si atendés vos o una sola persona, WhatsApp Business bien configurado suele alcanzar, y por eso es parte del nivel 1. Si varias personas responden, querés un asistente con IA o conectar anuncios con la conversación, conviene la API oficial de WhatsApp, que es lo que armo en el nivel 2.</p>
+      </details>
+      <details>
+        <summary>¿La IA reemplaza a mi equipo de ventas?</summary>
+        <p>No. La IA se encarga de lo repetitivo para que tu equipo tenga tiempo para lo que vende: escuchar, resolver dudas de verdad y generar confianza. IA para lo repetitivo, personas para lo que importa.</p>
+      </details>
+      <details>
+        <summary>¿Trabajás solo en Santa Fe?</summary>
+        <p>Estoy en la costa santafesina y trabajo en forma remota con pymes y profesionales de todo el país. Si estás en Santa Fe, Santo Tomé o Paraná, también podemos juntarnos en persona.</p>
+      </details>
+      <details>
+        <summary>¿Vas a responder los mensajes de mis clientes?</summary>
+        <p>No. No hago community management ni atiendo tus canales. Armo el sistema, la IA y el circuito para que tu equipo atienda mejor y más rápido.</p>
+      </details>
     </div>
   </div>
 </section>
