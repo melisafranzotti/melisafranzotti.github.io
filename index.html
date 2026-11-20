@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Melisa Franzotti · Atención omnicanal y automatización con IA</title>
+<meta name="description" content="Ayudo a pymes y profesionales a atender bien por todos sus canales: Instagram, WhatsApp, Facebook y web. Un cliente, muchos canales, una sola conversación.">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<meta property="og:title" content="Melisa Franzotti · Atención omnicanal y automatización con IA">
+<meta property="og:description" content="Un cliente, muchos canales, una sola conversación. IA para lo repetitivo, persona para lo que importa.">
+<meta property="og:url" content="https://melisafranzotti.github.io/">
+<meta property="og:image" content="https://melisafranzotti.github.io/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1B4250">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --petroleo:#1B4250; --petroleo-osc:#14333E; --agua:#6E9FA6; --agua-clara:#D3E2E3; --agua-texto:#3F6B72;
+  --crema:#ECE7DE; --crema-clara:#F6F3EE; --coral:#F07E6E; --coral-texto:#3A1712; --gris:#4E6870; --linea:#D2CABD;
+  --max:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--petroleo-osc);background:var(--crema-clara);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--petroleo)}
+.serif{font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:400}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.eyebrow{font-size:15px;font-weight:600;letter-spacing:.02em;color:var(--agua-texto);margin:0 0 16px}
+h1,h2,h3{margin:0;line-height:1.12;letter-spacing:-.02em}
+h2{font-size:clamp(32px,4.4vw,48px);font-weight:700;margin-bottom:20px}
+h3{font-size:21px;font-weight:700;letter-spacing:-.01em;margin-bottom:8px}
+p{margin:0 0 16px}
+section{padding:96px 0}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font-weight:700;font-size:17px;text-decoration:none;transition:transform .15s ease, box-shadow .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn:focus-visible{outline:3px solid var(--agua);outline-offset:3px}
+.btn-coral{background:var(--coral);color:var(--coral-texto)}
+.btn-linea{border:1.5px solid currentColor;color:var(--petroleo)}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:10;background:rgba(246,243,238,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(210,202,189,.6)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.nav-firma{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--petroleo-osc);font-weight:600;font-size:16px}
+.nav-firma img{width:44px;height:auto}
+.nav-links{display:flex;align-items:center;gap:28px}
+.nav-links a{text-decoration:none;font-size:15px;font-weight:500;color:var(--gris)}
+.nav-links a:hover{color:var(--petroleo)}
+.nav .btn{min-height:44px;padding:0 20px;font-size:15px}
+.nav-links a.btn-coral{color:var(--coral-texto)}
+
+/* hero */
+.hero{padding:72px 0 96px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center}
+.hero h1{font-size:clamp(42px,6vw,72px);font-weight:700;margin-bottom:24px}
+.hero h1 .serif{display:block;letter-spacing:-.01em}
+.hero .lead{font-size:20px;color:var(--gris);max-width:34ch;margin-bottom:32px}
+.hero-acciones{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.hero-foto{position:relative}
+.hero-foto img{border-radius:28px;aspect-ratio:4/5;height:auto;object-fit:cover;object-position:50% 20%;width:100%}
+.hero-foto .firma{position:absolute;right:-18px;bottom:-26px;width:110px;height:110px;aspect-ratio:1/1;object-fit:contain;background:var(--crema-clara);border-radius:50%;padding:22px}
+.canales{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.canales span{font-size:14px;font-weight:600;padding:6px 14px;border-radius:999px;background:var(--agua-clara);color:var(--petroleo)}
+
+/* problema */
+.problema{background:var(--crema)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+.tarjeta{background:var(--crema-clara);border-radius:20px;padding:30px}
+.tarjeta .num{font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:40px;line-height:1;color:var(--agua);margin-bottom:14px}
+.tarjeta p{color:var(--gris);font-size:17px;margin:0}
+
+/* solucion */
+.solucion{background:var(--petroleo);color:var(--crema)}
+.solucion .eyebrow{color:#A9C7CB}
+.solucion h2{color:var(--crema)}
+.solucion .intro{font-size:20px;color:#C9D9DB;max-width:52ch}
+.pasos{list-style:none;padding:0;margin:48px 0 0;display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.pasos li{border:1px solid rgba(110,159,166,.45);border-radius:20px;padding:28px}
+.pasos h3{color:var(--crema)}
+.pasos p{color:#C9D9DB;font-size:17px;margin:0}
+.alrededor{margin-top:48px;padding-top:32px;border-top:1px solid rgba(110,159,166,.45);display:flex;flex-wrap:wrap;gap:12px 32px;align-items:baseline}
+.alrededor strong{font-size:18px}
+.alrededor span{color:#C9D9DB}
+
+/* niveles */
+.niveles .grid2{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}
+.nivel{border-radius:24px;padding:36px;background:#fff;border:1px solid var(--linea);display:flex;flex-direction:column}
+.nivel .etiqueta{font-size:14px;font-weight:700;color:var(--agua-texto);margin-bottom:10px}
+.nivel h3{font-size:28px;margin-bottom:12px}
+.nivel ul{padding:0;margin:8px 0 24px;list-style:none}
+.nivel li strong{color:var(--petroleo-osc)}
+.nivel li{padding:10px 0 10px 30px;position:relative;border-bottom:1px solid #EEE9E1;font-size:17px}
+.nivel li::before{content:"";position:absolute;left:0;top:20px;width:16px;height:3px;border-radius:2px;background:var(--agua)}
+.nivel .ideal{margin-top:auto;font-size:16px;color:var(--gris)}
+.nivel-destacado{background:var(--agua-clara);border-color:transparent}
+.nota{margin-top:24px;font-size:16px;color:var(--gris);max-width:70ch}
+
+/* creo */
+.creo{background:var(--crema);text-align:center}
+.creo blockquote{margin:0 auto;max-width:18ch;font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:clamp(40px,6vw,76px);line-height:1.08;color:var(--petroleo)}
+.creo blockquote em{font-style:italic;color:#B4483A}
+.creo p{max-width:56ch;margin:32px auto 0;color:var(--gris);font-size:19px}
+
+/* sobre mi */
+.sobre .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:center}
+.sobre img{border-radius:24px;aspect-ratio:1/1;height:auto;width:100%;object-fit:cover;object-position:50% 12%}
+.sobre p{font-size:19px}
+.no-hago{margin-top:24px;padding:20px 24px;border-radius:16px;background:var(--crema);font-size:16px;color:var(--gris)}
+.no-hago strong{color:var(--petroleo-osc)}
+
+/* contacto */
+.contacto{background:var(--petroleo);color:var(--crema);text-align:center}
+.contacto h2{color:var(--crema);max-width:20ch;margin:0 auto 18px}
+.contacto p{color:#C9D9DB;max-width:48ch;margin:0 auto 32px;font-size:19px}
+.contacto .acciones{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+.contacto .btn-linea{color:var(--crema)}
+footer{background:var(--petroleo-osc);color:#A9C7CB;font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;padding-top:28px;padding-bottom:28px}
+footer img{width:48px}
+footer a{color:#A9C7CB}
+
+/* whatsapp flotante */
+.wa-flotante{position:fixed;right:20px;bottom:20px;z-index:20;width:58px;height:58px;border-radius:50%;background:var(--coral);color:var(--coral-texto);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(20,51,62,.25)}
+.wa-flotante:focus-visible{outline:3px solid var(--agua);outline-offset:3px}
+
+@media (max-width:900px){
+  section{padding:72px 0}
+  .hero{padding:40px 0 72px}
+  .hero .wrap,.sobre .wrap{grid-template-columns:1fr;gap:48px}
+  .hero-foto{max-width:420px}
+  .grid3,.pasos,.niveles .grid2{grid-template-columns:1fr}
+  .nav-links a:not(.btn){display:none}
+  .sobre img{max-width:360px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="nav-firma" href="#inicio"><img src="img/mf-tinta.png" alt="mf." width="44" height="40"><span>Melisa Franzotti</span></a>
+    <nav class="nav-links" aria-label="Principal">
+      <a href="#como">Cómo trabajo</a>
+      <a href="#empezar">Cómo empezar</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a class="btn btn-coral" href="https://wa.me/5493435143887?text=Hola%20Melisa%2C%20vi%20tu%20sitio%20y%20quiero%20consultarte" target="_blank" rel="noopener">Escribime</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Atención omnicanal y automatización con IA</p>
+      <h1>Un cliente, muchos canales, <span class="serif">una sola conversación.</span></h1>
+      <p class="lead">Ayudo a pymes y profesionales a que ninguna consulta se pierda: te escriban por donde te escriban, reciben la misma buena atención.</p>
+      <div class="hero-acciones">
+        <a class="btn btn-coral" href="https://wa.me/5493435143887?text=Hola%20Melisa%2C%20vi%20tu%20sitio%20y%20quiero%20consultarte" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"></path></svg>
+          Hablemos por WhatsApp
+        </a>
+        <a class="btn btn-linea" href="#como">Ver cómo trabajo</a>
+      </div>
+      <div class="canales" aria-label="Canales">
+        <span>Instagram</span><span>WhatsApp</span><span>Facebook</span><span>Tu web</span>
+      </div>
+    </div>
+    <div class="hero-foto">
+      <img src="img/melisa.jpg" alt="Melisa Franzotti sonriendo en un jardín" width="900" height="1607">
+      <img class="firma" src="img/mf-tinta.png" alt="" width="110" height="100">
+    </div>
+  </div>
+</section>
+
+<section class="problema" aria-labelledby="t-problema">
+  <div class="wrap">
+    <p class="eyebrow">¿Te suena?</p>
+    <h2 id="t-problema">Invertís para que te escriban. <span class="serif">Y después se corta.</span></h2>
+    <div class="grid3">
+      <div class="tarjeta"><div class="num">1</div><h3>Respondés tarde</h3><p>La consulta llega un domingo a la noche. El lunes, ese cliente ya le compró a otro.</p></div>
+      <div class="tarjeta"><div class="num">2</div><h3>El cliente repite todo</h3><p>Preguntó por Instagram, después escribió por WhatsApp y nadie sabía lo que ya había contado.</p></div>
+      <div class="tarjeta"><div class="num">3</div><h3>Nadie hace seguimiento</h3><p>El que preguntó y no compró queda en el olvido. No por falta de ganas: por falta de tiempo y de sistema.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="solucion" id="como" aria-labelledby="t-como">
+  <div class="wrap">
+    <p class="eyebrow">Cómo trabajo</p>
+    <h2 id="t-como">Primero, la atención. <span class="serif">Después, todo lo demás.</span></h2>
+    <p class="intro">Armo el sistema para que cada conversación llegue, se responda y se siga, sin importar el canal.</p>
+    <ul class="pasos">
+      <li><h3>Todo llega a un mismo lugar</h3><p>Instagram, WhatsApp, Facebook y tu web, en una sola bandeja. Nada se pierde entre aplicaciones.</p></li>
+      <li><h3>La IA responde lo repetitivo</h3><p>Horarios, precios, primeras preguntas: al instante, en cada canal y a cualquier hora.</p></li>
+      <li><h3>Tu equipo sigue la charla</h3><p>Cuando hace falta una persona, toma la conversación sabiendo todo lo anterior. El cliente no repite nada.</p></li>
+      <li><h3>Nadie queda en el olvido</h3><p>Cada consulta queda registrada, con seguimiento y recordatorios, para que puedas volver a quien no compró.</p></li>
+    </ul>
+    <div class="alrededor">
+      <strong>Y alrededor de esa atención:</strong>
+      <span>anuncios que llevan a la conversación · contenido · web · números claros para saber qué te trae ventas</span>
+    </div>
+  </div>
+</section>
+
+<section class="niveles" id="empezar" aria-labelledby="t-empezar">
+  <div class="wrap">
+    <p class="eyebrow">Cómo empezar</p>
+    <h2 id="t-empezar">Dos formas de arrancar, <span class="serif">según dónde estés.</span></h2>
+    <div class="grid2">
+      <div class="nivel">
+        <div class="etiqueta">Nivel 1</div>
+        <h3>Ordenar</h3>
+        <p>Ponemos en condiciones todo tu ecosistema digital, para que te encuentren donde te buscan y puedan escribirte fácil. Con herramientas gratuitas, sin sumar el costo de una plataforma de atención.</p>
+        <ul>
+          <li><strong>Meta:</strong> Instagram, Facebook y WhatsApp Business conectados, en una bandeja y con respuestas automáticas básicas.</li>
+          <li><strong>Google:</strong> tu Perfil de Empresa en Google y Maps al día, con horarios, fotos, reseñas y contacto, y la medición de tu sitio con Google Analytics.</li>
+          <li><strong>Tu sitio web:</strong> información clara, que funcione bien en el celular y con un botón directo a WhatsApp.</li>
+          <li><strong>Tu equipo:</strong> un circuito claro de quién responde qué, por dónde y en cuánto tiempo.</li>
+        </ul>
+        <p class="ideal">Ideal si tenés presencia en varios canales pero cada uno anda por su lado.</p>
+      </div>
+      <div class="nivel nivel-destacado">
+        <div class="etiqueta">Nivel 2</div>
+        <h3>Escalar</h3>
+        <p>Todo lo del nivel 1, más una plataforma profesional que junta tus canales con IA, seguimiento y métricas.</p>
+        <ul>
+          <li>Una sola bandeja para todo tu equipo, con WhatsApp oficial (API)</li>
+          <li>Asistente con IA entrenado con la información de tu negocio</li>
+          <li>Seguimiento automático y registro de cada cliente</li>
+          <li>Anuncios conectados a la conversación y números claros</li>
+        </ul>
+        <p class="ideal">Ideal si ya tenés volumen y un equipo que atiende.</p>
+      </div>
+    </div>
+    <p class="nota">En el nivel 2, la licencia de la plataforma queda a tu nombre: la herramienta y los datos son tuyos. Si un día dejamos de trabajar juntos, no perdés nada. Te cuento con transparencia qué cuesta cada cosa antes de empezar.</p>
+  </div>
+</section>
+
+<section class="creo" aria-labelledby="t-creo">
+  <div class="wrap">
+    <p class="eyebrow" id="t-creo">Lo que creo</p>
+    <blockquote>IA para lo repetitivo, <em>persona</em> para lo que importa.</blockquote>
+    <p>Una buena atención omnicanal no es poner un bot en cada red. Es que tu cliente sienta que habla con una sola empresa que lo conoce. La IA hace el trabajo pesado; las personas, lo que ninguna máquina hace bien: escuchar y generar confianza.</p>
+  </div>
+</section>
+
+<section class="sobre" id="sobre-mi" aria-labelledby="t-sobre">
+  <div class="wrap">
+    <img src="img/melisa.jpg" alt="Retrato de Melisa Franzotti" width="900" height="900" loading="lazy">
+    <div>
+      <p class="eyebrow">Sobre mí</p>
+      <h2 id="t-sobre">Hola, soy Melisa.</h2>
+      <p>Hace más de 10 años que trabajo en marketing digital. Empecé en un comercio de Paraná, cuando muchos todavía no se animaban a vender por internet, y desde entonces no paré de aprender: soy autodidacta por naturaleza.</p>
+      <p>Hoy soy consultora independiente y trabajo desde la costa santafesina, para pymes y profesionales de todo el país, en forma remota.</p>
+      <div class="no-hago"><strong>Lo que no hago:</strong> no respondo los mensajes de tus clientes ni gestiono tus redes como community manager. Armo el sistema para que tu equipo atienda mejor.</div>
+    </div>
+  </div>
+</section>
+
+<section class="contacto" aria-labelledby="t-contacto">
+  <div class="wrap">
+    <h2 id="t-contacto">¿Te escriben por todos lados y se te pierden consultas?</h2>
+    <p>Contame cómo atendés hoy y vemos qué te conviene. Sin compromiso.</p>
+    <div class="acciones">
+      <a class="btn btn-coral" href="https://wa.me/5493435143887?text=Hola%20Melisa%2C%20vi%20tu%20sitio%20y%20quiero%20consultarte" target="_blank" rel="noopener">Escribime por WhatsApp</a>
+      <a class="btn btn-linea" href="https://www.linkedin.com/in/melisafranzotti/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="img/mf-crema.png" alt="mf." width="48" height="44">
+    <span>Melisa Franzotti · Santa Fe, Argentina · trabajo remoto</span>
+    <span class="serif">IA para lo repetitivo, persona para lo que importa.</span>
+  </div>
+</footer>
+
+<a class="wa-flotante" href="https://wa.me/5493435143887?text=Hola%20Melisa%2C%20vi%20tu%20sitio%20y%20quiero%20consultarte" target="_blank" rel="noopener" aria-label="Escribime por WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"></path></svg>
+</a>
+
+</body>
+</html>
