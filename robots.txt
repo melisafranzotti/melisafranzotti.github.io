@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://melisafranzotti.github.io/sitemap.xml
+Sitemap: https://melisafranzotti.com.ar/sitemap.xml
