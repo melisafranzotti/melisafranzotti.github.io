@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Melisa Franzotti · Atención omnicanal, marketing conversacional y automatización con IA</title>
-<meta name="description" content="Consultora en atención omnicanal y automatización de WhatsApp con IA para pymes y profesionales. Desde Santa Fe, Argentina, con trabajo remoto en todo el país.">
+<title>Comercio conversacional y automatización con IA para pymes · Melisa Franzotti</title>
+<meta name="description" content="Comercio conversacional omnicanal para pymes: WhatsApp, Instagram, Facebook y tu web en una sola conversación, con agentes de IA y CRM. Desde Santa Fe, para todo el país.">
 <meta name="author" content="Melisa Franzotti">
 <meta name="google-site-verification" content="gdGsH-oOVV2Y6hvarRN_TbwxmT_aSojlO5cquZC-6Lg">
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -13,7 +13,7 @@
 <link rel="apple-touch-icon" href="img/favicon.png">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_AR">
-<meta property="og:title" content="Melisa Franzotti · Atención omnicanal, marketing conversacional y automatización con IA">
+<meta property="og:title" content="Melisa Franzotti · Comercio conversacional omnicanal y automatización con IA">
 <meta property="og:description" content="Un cliente, muchos canales, una sola conversación. IA para lo repetitivo, personas para lo que importa.">
 <meta property="og:url" content="https://melisafranzotti.com.ar/">
 <meta property="og:image" content="https://melisafranzotti.com.ar/img/og.jpg">
@@ -140,6 +140,19 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-con
 footer img{width:48px}
 footer a{color:#A9C7CB}
 
+/* notas en la home */
+.notas-home{background:var(--crema-clara)}
+.notas-cab{display:flex;flex-wrap:wrap;gap:20px 40px;align-items:flex-end;justify-content:space-between;margin-bottom:36px}
+.notas-cab h2{margin-bottom:0}
+.notas-cab h2 .serif{display:block}
+.nota-destacada{display:block;text-decoration:none;color:var(--petroleo-osc);background:#fff;border:1px solid var(--linea);border-left:6px solid var(--coral);border-radius:24px;padding:40px;transition:transform .15s ease, box-shadow .15s ease}
+.nota-destacada:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(20,51,62,.10)}
+.nota-destacada:focus-visible{outline:3px solid var(--agua);outline-offset:3px}
+.nota-etiqueta{display:block;font-size:14px;font-weight:700;color:var(--agua-texto);margin-bottom:14px}
+.nota-destacada h3{font-size:clamp(26px,3vw,34px);line-height:1.15;margin-bottom:12px}
+.nota-destacada p{color:var(--gris);font-size:18px;max-width:60ch}
+.nota-leer{font-weight:700;color:#B4483A}
+
 /* whatsapp flotante */
 .wa-flotante{position:fixed;right:20px;bottom:20px;z-index:20;width:58px;height:58px;border-radius:50%;background:var(--coral);color:var(--coral-texto);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(20,51,62,.25)}
 .wa-flotante:focus-visible{outline:3px solid var(--agua);outline-offset:3px}
@@ -150,8 +163,10 @@ footer a{color:#A9C7CB}
   .hero .wrap,.sobre .wrap{grid-template-columns:1fr;gap:48px}
   .hero-foto{max-width:420px}
   .grid3,.pasos,.niveles .grid2{grid-template-columns:1fr}
-  .nav-links a:not(.btn){display:none}
+  .nav-links a:not(.btn):not(.nav-notas){display:none}
+  .nav-links{gap:16px}
   .sobre img{max-width:360px}
+  .nota-destacada{padding:28px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
 </style>
@@ -173,11 +188,11 @@ footer a{color:#A9C7CB}
       "name": "Melisa Franzotti",
       "url": "https://melisafranzotti.com.ar/",
       "image": "https://melisafranzotti.com.ar/img/melisa.jpg",
-      "jobTitle": "Consultora en atención omnicanal, marketing conversacional y automatización con IA",
-      "description": "Consultora independiente con más de 10 años en marketing digital. Ayuda a pymes y profesionales a atender bien por Instagram, WhatsApp, Facebook y web.",
+      "jobTitle": "Consultora en comercio conversacional omnicanal y automatización con IA",
+      "description": "Consultora independiente con más de 10 años en marketing digital. Ayuda a pymes y profesionales a vender por WhatsApp, Instagram, Facebook y su web, con agentes de IA y una sola conversación por cliente.",
       "address": {"@type": "PostalAddress", "addressLocality": "Santa Fe", "addressRegion": "Santa Fe", "addressCountry": "AR"},
       "alumniOf": {"@type": "CollegeOrUniversity", "name": "Universidad Autónoma de Entre Ríos"},
-      "knowsAbout": ["Atención omnicanal", "Marketing conversacional", "Automatización con IA", "WhatsApp Business API", "Agentes de IA para WhatsApp", "Meta Ads", "Campañas click to WhatsApp", "Google Ads", "CRM"],
+      "knowsAbout": ["Comercio conversacional", "Omnicanalidad", "Atención omnicanal", "Marketing conversacional", "Automatización con IA", "WhatsApp Business API", "Agentes de IA para WhatsApp", "Meta Ads", "Campañas click to WhatsApp", "Google Ads", "CRM"],
       "sameAs": ["https://www.linkedin.com/in/melisafranzotti/"],
       "worksFor": {"@id": "https://melisafranzotti.com.ar/#servicio"}
     },
@@ -190,7 +205,7 @@ footer a{color:#A9C7CB}
       "logo": "https://melisafranzotti.com.ar/img/mf-tinta.png",
       "telephone": "+54 9 343 514-3887",
       "slogan": "IA para lo repetitivo, personas para lo que importa.",
-      "description": "Atención omnicanal, marketing conversacional y automatización con IA para pymes y profesionales: Instagram, WhatsApp, Facebook y web en una sola conversación.",
+      "description": "Comercio conversacional omnicanal y automatización con IA para pymes y profesionales: Instagram, WhatsApp, Facebook y web en una sola conversación, con agentes de IA y CRM.",
       "founder": {"@id": "https://melisafranzotti.com.ar/#melisa"},
       "address": {"@type": "PostalAddress", "addressLocality": "Santa Fe", "addressRegion": "Santa Fe", "addressCountry": "AR"},
       "areaServed": [
@@ -205,9 +220,71 @@ footer a{color:#A9C7CB}
         "name": "Formas de empezar",
         "itemListElement": [
           {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Nivel 1 · Ordenar", "description": "Puesta en condiciones del ecosistema digital: Meta (Instagram, Facebook y WhatsApp Business), Perfil de Empresa en Google, sitio web y circuito de atención del equipo."}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Nivel 2 · Escalar", "description": "Plataforma profesional de atención omnicanal con WhatsApp oficial (API), asistente con IA, seguimiento automático y anuncios conectados a la conversación."}}
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Nivel 2 · Escalar", "description": "Plataforma profesional de atención omnicanal con WhatsApp oficial (API), agente de IA, seguimiento automático y anuncios conectados a la conversación."}}
         ]
       }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://melisafranzotti.com.ar/#preguntas",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué es el comercio conversacional?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Es vender a través de la conversación: tu cliente consulta, resuelve sus dudas y decide la compra por WhatsApp, Instagram, Facebook o tu web, en lugar de llenar un formulario y esperar. Para que funcione, esas conversaciones tienen que llegar a un mismo lugar, responderse rápido y con contexto, y tener seguimiento. Eso es lo que armo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué es la atención omnicanal y por qué le sirve a una pyme?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Es que tu cliente pueda escribirte por Instagram, WhatsApp, Facebook o tu web y que del otro lado lo atiendan como una sola empresa: con el mismo tono, la misma información y sabiendo lo que ya habló. Para una pyme significa menos consultas perdidas y menos clientes que tienen que repetir todo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo tener un agente de IA en el WhatsApp de mi negocio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Un agente de IA (un asistente que responde por WhatsApp) entrenado con la información de tu negocio puede responder las preguntas repetitivas a cualquier hora (horarios, precios, primeros datos) y pasarle la conversación a una persona de tu equipo cuando hace falta, con todo el contexto."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Me alcanza con WhatsApp Business o necesito la API oficial?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende del volumen. Si atendés vos o una sola persona, WhatsApp Business bien configurado suele alcanzar, y por eso es parte del nivel 1. Si varias personas responden, querés un agente de IA o conectar anuncios con la conversación, conviene la API oficial de WhatsApp, que es lo que armo en el nivel 2."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿La IA reemplaza a mi equipo de ventas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. La IA se encarga de lo repetitivo para que tu equipo tenga tiempo para lo que vende: escuchar, resolver dudas de verdad y generar confianza. IA para lo repetitivo, personas para lo que importa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Trabajás solo en Santa Fe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Estoy en la costa santafesina y trabajo en forma remota con pymes y profesionales de todo el país. Si estás en Santa Fe, Santo Tomé o Paraná, también podemos juntarnos en persona."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Vas a responder los mensajes de mis clientes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. No hago community management ni atiendo tus canales. Armo el sistema, la IA y el circuito para que tu equipo atienda mejor y más rápido."
+          }
+        }
+      ]
     }
   ]
 }
@@ -222,7 +299,7 @@ footer a{color:#A9C7CB}
       <a href="#como">Cómo trabajo</a>
       <a href="#empezar">Cómo empezar</a>
       <a href="#sobre-mi">Sobre mí</a>
-      <a href="notas/">Notas</a>
+      <a class="nav-notas" href="notas/">Notas</a>
       <a class="btn btn-coral" href="https://wa.me/5493435143887?text=Hola%20Melisa%2C%20vi%20tu%20sitio%20y%20quiero%20consultarte" target="_blank" rel="noopener">Escribime</a>
     </nav>
   </div>
@@ -233,9 +310,9 @@ footer a{color:#A9C7CB}
 <section class="hero">
   <div class="wrap">
     <div>
-      <p class="eyebrow">Atención omnicanal, marketing conversacional y automatización con IA</p>
+      <p class="eyebrow">Comercio conversacional omnicanal y automatización con IA</p>
       <h1>Un cliente, muchos canales, <span class="serif">una sola conversación.</span></h1>
-      <p class="lead">Ayudo a pymes y profesionales a que ninguna consulta se pierda: te escriban por donde te escriban, reciben la misma buena atención.</p>
+      <p class="lead">Ayudo a pymes y profesionales que venden por WhatsApp y redes a que ninguna consulta se pierda: te escriban por donde te escriban, reciben la misma buena atención.</p>
       <div class="hero-acciones">
         <a class="btn btn-coral" href="https://wa.me/5493435143887?text=Hola%20Melisa%2C%20vi%20tu%20sitio%20y%20quiero%20consultarte" target="_blank" rel="noopener">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"></path></svg>
@@ -273,7 +350,7 @@ footer a{color:#A9C7CB}
     <p class="intro">Armo el sistema para que cada conversación llegue, se responda y se siga, sin importar el canal.</p>
     <ul class="pasos">
       <li><h3>Todo llega a un mismo lugar</h3><p>Instagram, WhatsApp, Facebook y tu web, en una sola bandeja. Nada se pierde entre aplicaciones.</p></li>
-      <li><h3>La IA responde lo repetitivo</h3><p>Horarios, precios, primeras preguntas: al instante, en cada canal y a cualquier hora.</p></li>
+      <li><h3>Un agente de IA responde lo repetitivo</h3><p>Horarios, precios, primeras preguntas: al instante, en cada canal y a cualquier hora.</p></li>
       <li><h3>Tu equipo sigue la charla</h3><p>Cuando hace falta una persona, toma la conversación sabiendo todo lo anterior. El cliente no repite nada.</p></li>
       <li><h3>Nadie queda en el olvido</h3><p>Cada consulta queda registrada, con seguimiento y recordatorios, para que puedas volver a quien no compró.</p></li>
     </ul>
@@ -307,7 +384,7 @@ footer a{color:#A9C7CB}
         <p>Todo lo del nivel 1, más una plataforma profesional que junta tus canales con IA, seguimiento y métricas.</p>
         <ul>
           <li>Una sola bandeja para todo tu equipo, con WhatsApp oficial (API)</li>
-          <li>Asistente con IA entrenado con la información de tu negocio</li>
+          <li>Agente de IA entrenado con la información de tu negocio</li>
           <li>Seguimiento automático y registro de cada cliente</li>
           <li>Anuncios conectados a la conversación y números claros</li>
         </ul>
@@ -326,6 +403,24 @@ footer a{color:#A9C7CB}
   </div>
 </section>
 
+<section class="notas-home" id="notas" aria-labelledby="t-notas">
+  <div class="wrap">
+    <div class="notas-cab">
+      <div>
+        <p class="eyebrow">Notas</p>
+        <h2 id="t-notas">Lo que pienso sobre vender conversando. <span class="serif">Sin humo.</span></h2>
+      </div>
+      <a class="btn btn-linea" href="notas/">Ver todas las notas</a>
+    </div>
+    <a class="nota-destacada" href="notas/responder-con-contexto/">
+      <span class="nota-etiqueta">Nota más reciente · 4 min de lectura</span>
+      <h3>Responder rápido ya no alcanza. <span class="serif">Responder con contexto, sí.</span></h3>
+      <p>La velocidad se volvió el piso. Lo que tu cliente nota hoy es otra cosa.</p>
+      <span class="nota-leer">Leer la nota →</span>
+    </a>
+  </div>
+</section>
+
 <section class="sobre" id="sobre-mi" aria-labelledby="t-sobre">
   <div class="wrap">
     <img src="img/melisa.jpg" alt="Retrato de Melisa Franzotti" width="900" height="900" loading="lazy">
@@ -333,7 +428,7 @@ footer a{color:#A9C7CB}
       <p class="eyebrow">Sobre mí</p>
       <h2 id="t-sobre">Hola, soy Melisa.</h2>
       <p>Hace más de 10 años que trabajo en marketing digital. Empecé en un comercio de Paraná, cuando muchos todavía no se animaban a vender por internet, y desde entonces no paré de aprender: soy autodidacta por naturaleza.</p>
-      <p>Hoy soy consultora independiente y trabajo desde la costa santafesina, para pymes y profesionales de todo el país, en forma remota.</p>
+      <p>Hoy soy consultora independiente en comercio conversacional y automatización con IA, y trabajo desde la costa santafesina, para pymes y profesionales de todo el país, en forma remota.</p>
       <div class="no-hago"><strong>Lo que no hago:</strong> no respondo los mensajes de tus clientes ni gestiono tus redes como community manager. Armo el sistema para que tu equipo atienda mejor.</div>
     </div>
   </div>
@@ -345,16 +440,20 @@ footer a{color:#A9C7CB}
     <h2 id="t-preguntas">Lo que suelen preguntarme <span class="serif">antes de empezar.</span></h2>
     <div class="lista">
       <details>
+        <summary>¿Qué es el comercio conversacional?</summary>
+        <p>Es vender a través de la conversación: tu cliente consulta, resuelve sus dudas y decide la compra por WhatsApp, Instagram, Facebook o tu web, en lugar de llenar un formulario y esperar. Para que funcione, esas conversaciones tienen que llegar a un mismo lugar, responderse rápido y con contexto, y tener seguimiento. Eso es lo que armo.</p>
+      </details>
+      <details>
         <summary>¿Qué es la atención omnicanal y por qué le sirve a una pyme?</summary>
         <p>Es que tu cliente pueda escribirte por Instagram, WhatsApp, Facebook o tu web y que del otro lado lo atiendan como una sola empresa: con el mismo tono, la misma información y sabiendo lo que ya habló. Para una pyme significa menos consultas perdidas y menos clientes que tienen que repetir todo.</p>
       </details>
       <details>
-        <summary>¿Puedo tener un asistente con IA en el WhatsApp de mi negocio?</summary>
-        <p>Sí. Un asistente con IA entrenado con la información de tu negocio puede responder las preguntas repetitivas a cualquier hora (horarios, precios, primeros datos) y pasarle la conversación a una persona de tu equipo cuando hace falta, con todo el contexto.</p>
+        <summary>¿Puedo tener un agente de IA en el WhatsApp de mi negocio?</summary>
+        <p>Sí. Un agente de IA (un asistente que responde por WhatsApp) entrenado con la información de tu negocio puede responder las preguntas repetitivas a cualquier hora (horarios, precios, primeros datos) y pasarle la conversación a una persona de tu equipo cuando hace falta, con todo el contexto.</p>
       </details>
       <details>
         <summary>¿Me alcanza con WhatsApp Business o necesito la API oficial?</summary>
-        <p>Depende del volumen. Si atendés vos o una sola persona, WhatsApp Business bien configurado suele alcanzar, y por eso es parte del nivel 1. Si varias personas responden, querés un asistente con IA o conectar anuncios con la conversación, conviene la API oficial de WhatsApp, que es lo que armo en el nivel 2.</p>
+        <p>Depende del volumen. Si atendés vos o una sola persona, WhatsApp Business bien configurado suele alcanzar, y por eso es parte del nivel 1. Si varias personas responden, querés un agente de IA o conectar anuncios con la conversación, conviene la API oficial de WhatsApp, que es lo que armo en el nivel 2.</p>
       </details>
       <details>
         <summary>¿La IA reemplaza a mi equipo de ventas?</summary>

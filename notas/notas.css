@@ -49,4 +49,4 @@ footer{background:var(--petroleo-osc);color:#A9C7CB;font-size:15px}
 footer .wrap{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;padding-top:28px;padding-bottom:28px}
 footer img{width:48px}
 footer a{color:#A9C7CB}
-@media (max-width:900px){.nav-links a:not(.btn){display:none}}
+@media (max-width:900px){.nav-links a:not(.btn):not(.nav-notas){display:none}.nav-links{gap:16px}}
